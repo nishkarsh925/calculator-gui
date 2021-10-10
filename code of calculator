@@ -1,5 +1,6 @@
 #modules required tkinter
 #All modules can be easily found on python.org
+import time
 from tkinter import *
 root = Tk()
 root.geometry("400x630")
@@ -108,4 +109,5 @@ tfq = Button(ezz,text=".",font="lucida 30 bold",fg="black",padx=35)
 tfq.pack(side="left",padx = 5,pady = 5)
 tfq.bind("<Button-1>",click)
 root.mainloop()
+print(time.asctime(time.localtime(time.time())))
 
